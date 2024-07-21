@@ -1,0 +1,19 @@
+<div>
+  <h1>Editar Usuário</h1>
+  <div *ngIf="error" class="error">
+    <i class="ri-information-line"></i>{{error}}
+  </div>
+  <div *ngIf="user">
+    <form (ngSubmit)="handleSubmit(user)">
+      <div class="input">
+        <label for="name">Nome:</label>
+        <input type="text" [(ngModel)]="user.name" name="name" required>
+      </div>
+      <div class="input">
+        <label for="email">Email:</label>
+        <input type="email" [(ngModel)]="user.email" name="email" required>
+      </div>
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
+</div>

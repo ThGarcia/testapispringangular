@@ -1,0 +1,17 @@
+.home {
+  height: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home p,
+.home li {
+  font-size: medium;
+}
+
+.home a {
+  font-weight: bolder;
+  color: blue;
+}

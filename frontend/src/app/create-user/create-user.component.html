@@ -1,0 +1,17 @@
+<div>
+  <h1>Novo Usuário</h1>
+  <form (ngSubmit)="createUser()">
+    <div class="input">
+      <label for="name">Nome:</label>
+      <input type="text" [(ngModel)]="userData.name" name="name" placeholder="Nome completo..." required>
+    </div>
+    <div class="input">
+      <label for="email">Email:</label>
+      <input type="email" [(ngModel)]="userData.email" name="email" placeholder="email2email.com" required>
+    </div>
+    <button type="submit">Salvar</button>
+  </form>
+  <div *ngIf="error" class="error">
+    <i class="ri-information-line"></i>{{error}}
+  </div>
+</div>

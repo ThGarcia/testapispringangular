@@ -27,7 +27,7 @@ This project demonstrates a fullstack application built with Angular for the fro
 **Accessing the Application:**
 
 * **Frontend:** http://localhost:4200
-* **Backend (API):** http://localhost:8080/api/users
+* **Backend (API):** http://localhost:8080/api/users/
 * **API Documentation (Swagger):** http://localhost:8080/swagger-ui/index.html#/
 
 **Frontend Features:**
